@@ -1,0 +1,6 @@
+1. Dado uma data e hora específica em string,
+use a nova API de datas do Java para criar um objeto
+LocalDate, um LocalTime e um LocalDateTime e imprimí-los;
+
+2. A partir da data atual, calcule e imprima uma compra de R$ 64.000,00
+parcelado em 48x. Imprima o valor e a data de cada parcela usando a nova API de datas do Java.

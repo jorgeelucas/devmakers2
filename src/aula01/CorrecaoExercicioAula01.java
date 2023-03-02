@@ -32,7 +32,6 @@ public class CorrecaoExercicioAula01 {
 
         System.out.println(localDateTime);
 
-
     }
 
 }

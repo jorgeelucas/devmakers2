@@ -1,5 +1,6 @@
 package aula02;
 
+import java.time.DayOfWeek;
 import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -7,6 +8,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Period;
 import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalAdjusters;
 
 public class Principal2 {
 
@@ -41,7 +43,7 @@ public class Principal2 {
         Instant inicio = Instant.now();
         long inicioMillis = System.currentTimeMillis();
         // BLOCO DE CODIGO
-        Thread.sleep(2000);
+//        Thread.sleep(2000);
         long fimMillis = System.currentTimeMillis();
         Instant fim = Instant.now();
 
@@ -52,6 +54,27 @@ public class Principal2 {
 
         var primeiro = LocalDate.of(2000, 3, 1);
         var segundo = LocalDate.of(2000, 3, 2);
+
+        // AJUSTES EM DATAS E HORAS
+
+        //LocalDate dataNascimento = LocalDate.of(2000, 3, 1);
+        LocalDate dataNascimento = LocalDate.now();
+
+        LocalDate primeiraSextaAposONascimento = dataNascimento
+                .with(TemporalAdjusters.next(DayOfWeek.FRIDAY));
+
+        System.out.println("primeira sexta apos: "+ primeiraSextaAposONascimento);
+
+
+        LocalDate ultimaSegundaFeiraDaqueleMes = dataNascimento
+                .with(TemporalAdjusters.lastInMonth(DayOfWeek.MONDAY));
+
+        System.out.println("ultima segunda do mes: "+ultimaSegundaFeiraDaqueleMes);
+
+        LocalDate ultimaSegundaFeira = dataNascimento
+                .with(TemporalAdjusters.previous(DayOfWeek.MONDAY));
+
+        System.out.println("segunda anterior: " + ultimaSegundaFeira);
 
     }
 }

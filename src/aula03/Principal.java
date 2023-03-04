@@ -60,5 +60,3 @@ public class Principal {
 
     }
 }
-
-record Aluno(String nome, Double nota){}

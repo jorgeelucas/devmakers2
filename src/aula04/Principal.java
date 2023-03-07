@@ -4,6 +4,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Principal {
@@ -166,6 +167,24 @@ public class Principal {
 
         System.out.println("maximo: "+maximo);
 
+//        List<Integer> retorno = numerosAleatorios
+//                .stream()
+//                .toList();
+
+//        List<Integer> retorno = numerosAleatorios
+//                .stream()
+//                .collect(Collectors.toList());
+
+        // tolist
+        // collect
+
+//        List<Integer> limitados = List.of(1,2,3,4,5,6,7,8)
+//                .stream()
+//                .filter((n) -> n % 2 == 0)
+//                .limit(2)
+//                .toList();
+//
+//        System.out.println(limitados);
 
     }
 

@@ -1,0 +1,25 @@
+Obs.: utilizar stream de primitivos quando necessário
+
+1. Dado uma lista de inteiros, encontre a soma de todos os numeros da lista;
+
+2. Dado uma lista de pessoas, agrupe os nomes por idade;
+
+3. Dado uma lista de funcionarios, calcule a média de salário por departamento;
+
+4. Dado uma lista de transações, encontre o total de transações por cliente;
+
+Transacao: jorge, 10
+Transacao: maria, 20
+Transacao: jorge, 5
+
+resultado: Map -> jorge=15, maria=20
+
+5. Dado uma lista de livros, encontre o autor mais popular baseado na quantidade de livros vendidos;
+
+6. Dado uma lista de numeros, encontre o segundo maior número;
+
+7. Dado um texto, retorne um mapa com a frequencia de cada palavra;
+
+--> feliz dia das mulheres para vocês mulheres da turma
+
+feliz=1, dia=1, das=1, mulheres=2, para=1, vocês=1, da=1, turma=1

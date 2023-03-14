@@ -1,0 +1,18 @@
+Baseado nas seguintes transações financeiras:
+
+List<Transacao> transacoes = List.of(
+        new Transacao("compras", 100.0),
+        new Transacao("compras", 50.0),
+        new Transacao("compras", 75.0),
+        new Transacao("alimentação", 40.0),
+        new Transacao("alimentação", 20.0),
+        new Transacao("transporte", 30.0),
+        new Transacao("transporte", 15.0),
+        new Transacao("transporte", 20.0),
+        new Transacao("lazer", 80.0),
+        new Transacao("lazer", 50.0));
+
+AGRUPE as transações por categoria e MAPEIE o resultado
+para o valor total gasto em cada categoria, de forma que o resultado seja o seguinte:
+
+{compras=225.0, alimentação=60.0, lazer=130.0, transporte=65.0}
